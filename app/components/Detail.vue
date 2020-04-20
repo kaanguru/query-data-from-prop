@@ -1,7 +1,8 @@
 <template>
   <Page>
-    <StackLayout>
-      <Label :text="bird.isim" textWrap="true" class="p-20 m-20"/>
+    <Label v-if="$apollo.loading" text="loading" textWrap="true" />
+    <StackLayout v-else>
+      <Label :text="bird.isim" textWrap="true" class="p-20 m-20" />
       <Button text="get data" @tap="getData" />
     </StackLayout>
   </Page>
@@ -12,7 +13,11 @@ import { gql } from "apollo-boost";
 
 export default {
   props: ["birdID"],
-
+  // data: () => ({
+  //   bird: {
+  //     isim: null,
+  //   },
+  // }),
   apollo: {
     bird: {
       query: gql`
