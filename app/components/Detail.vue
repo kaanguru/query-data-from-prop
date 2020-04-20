@@ -13,11 +13,11 @@ import { gql } from "apollo-boost";
 
 export default {
   props: ["birdID"],
-  // data: () => ({
-  //   bird: {
-  //     isim: null,
-  //   },
-  // }),
+  data: () => ({
+    bird: {
+      isim: null,
+    },
+  }),
   apollo: {
     bird: {
       query: gql`
