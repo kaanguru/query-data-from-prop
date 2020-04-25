@@ -6,7 +6,7 @@ import VueDevtools from 'nativescript-vue-devtools'
 import ApolloClient from 'apollo-boost'
 
 const apolloClient = new ApolloClient({
-  uri: 'http://sebapi.com/graphql',
+  uri: 'https://sebapi.com/graphql',
   headers: {
     "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTg2MTY2NjQ1LCJleHAiOjE1ODg3NTg2NDV9.9A8id9YARDw5M0XKE8jlP_yxMRnGBfegjA2hn7kIqlw"
   }

@@ -3,7 +3,7 @@ module.exports = {
       service: {
         name: 'sebapp',
         // URL to the GraphQL API
-        url: 'http://sebapi.com/graphql',
+        url: 'https://sebapi.com/graphql',
       },
       // Files processed by the extension
       includes: [
